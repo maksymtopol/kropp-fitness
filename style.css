@@ -1352,6 +1352,16 @@ input[type=number] {
   margin-top: 20px;
 }
 
+@media (hover: none) {
+  .portfolio-card-body {
+    opacity: 1;
+  }
+
+  .portfolio-card:hover .portfolio-card-image {
+    scale: 1;
+  }
+}
+
 @media (max-width: 1919px) {
   .motivation-card-image {
     margin-block: -20px;
@@ -1478,7 +1488,8 @@ input[type=number] {
 
  .portfolio-list,
  .blog-list,
- .shop-list {
+ .shop-list,
+ .team-list {
   grid-template-columns: repeat(2, 1fr);
  }
 }
@@ -1630,10 +1641,14 @@ input[type=number] {
  }
 
  .team-list,
- .portfolio-list,
  .blog-list,
  .shop-list {
   grid-template-columns: 1fr;
+ }
+
+ .portfolio-list {
+  grid-template-columns: 1fr;
+  gap: 12px;
  }
 
  .team-header:not(:last-child) {
@@ -1642,6 +1657,88 @@ input[type=number] {
 
  .cta {
   padding-block: 60px;
+ }
+
+ .page-hero {
+  padding: 40px 15px 35px;
+ }
+
+ .page-hero-description {
+  font-size: 16px;
+ }
+
+ .about,
+ .portfolio,
+ .blog,
+ .shop,
+ .team,
+ .stats {
+  padding-block: 50px;
+ }
+
+ .about-description:not(:last-child) {
+  margin-bottom: 20px;
+ }
+
+ .about-button,
+ .cta-button {
+  width: 100%;
+ }
+
+ .shop-card-button {
+  width: 100%;
+  justify-content: center;
+ }
+
+ .stats-list {
+  gap: 24px 12px;
+ }
+
+ .stats-label {
+  font-size: 12px;
+ }
+
+ .team-list,
+ .blog-list,
+ .shop-list {
+  gap: 20px;
+ }
+
+ .team-card-image {
+  aspect-ratio: 4 / 3;
+ }
+
+ .team-card-name {
+  margin-top: 16px;
+  font-size: 18px;
+ }
+
+ .blog-card-body {
+  row-gap: 12px;
+  padding: 24px 20px;
+ }
+
+ .blog-card-title {
+  font-size: 18px;
+ }
+
+ .shop-card {
+  padding: 35px 20px 30px;
+ }
+
+ .shop-card-image {
+  width: 90px;
+  height: 85px;
+  margin-bottom: 12px;
+ }
+
+ .portfolio-card-body {
+  padding: 18px;
+  opacity: 1;
+ }
+
+ .portfolio-card-title {
+  font-size: 16px;
  }
 }
 
