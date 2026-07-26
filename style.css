@@ -1397,6 +1397,8 @@ input[type=number] {
 
  .banner {
   row-gap: 10px;
+  min-height: auto;
+  padding-block: 100px 36px;
  }
 
  .motivation-card {
@@ -1511,6 +1513,11 @@ input[type=number] {
 
   .header-actions {
     column-gap: 15px;
+  }
+
+  .banner {
+    min-height: auto;
+    padding-block: 70px 36px;
   }
 
   .banner-info {
